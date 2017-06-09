@@ -46,7 +46,7 @@ Please follow these instructions carefully to quickly start building your own AP
 your API available to the internet (or to your local development environment).
 
 ## TESTING
-This api-kit comes test-ready. 
+This api-kit is test-ready. 
 The controllers and models are included in both acceptance and unit testing based on Codeception. 
 They are located in ```/tests```. To execute the tests, run ```./vendor/bin/codecept run```.
 
@@ -70,7 +70,7 @@ The ```[Tablename]``` class will not be overridden when executing the action aga
 #### ./yii auto/apidoc
 Generates API documentation based on [apidoc](http://apidocjs.com/) from the comments in the ```./controllers``` folder.
 It outputs the documentation in the Git-ignored folder ```./web/apidoc```.
-You may include this folder in Git if you want to export the documentation to a production server.
+You may include this folder in Git manually if you want to export the documentation to a production server.
 Please note, apidoc is a dev-dependency in Node.js. It will only be installed when using the ```npm install``` command.
 
 ## ISSUES
