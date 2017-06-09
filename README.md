@@ -74,6 +74,9 @@ It outputs the documentation in the Git-ignored folder ```./web/apidoc```.
 You may include this folder in Git manually if you want to export the documentation to a production server.
 Please note, apidoc is a dev-dependency in Node.js. It will only be installed when using the ```npm install``` command.
 
+## HOW TO CONTRIBTE
+You may contribute in any way you want, but please contact me beforehand to prevent merge-conflicts.
+
 ## ISSUES
 If you have any questions or experience any issues with this kit, please [submit an issue](https://github.com/blurrywindows/yii2-api-kit/issues).
 
