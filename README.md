@@ -37,9 +37,15 @@ Please follow these instructions to quickly start building your own API.
 * Install all required Node.js packages (```npm install```).
 * When deploying to production, only install production packages (```npm install --production```)
 
-## CONFIGURATION
+### Environment
+* Rename ```.env.demo``` to ```.env``` in your project root and alter the variables to your current environment.
+* Make sure that the ```ENTRY_URL``` variable has a trailing slash (https://api.yii2-api-kit.com/v1**/**).
+
+### Webserver
+* Follow the instruction in the [Yii2 guide](http://www.yiiframework.com/doc-2.0/guide-start-installation.html) to make your API available to the internet (or to your local development environment)
 
 ## TESTING
+This api-kit comes test-ready. The controllers and models are included in both acceptance and unit testing based on Codeception. To execute the tests, run ```./vendor/bin/codecept run```.
 
 ## CONSOLE COMMANDS
 
