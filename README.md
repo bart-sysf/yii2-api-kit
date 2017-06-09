@@ -8,10 +8,10 @@ This kit is in development. [Would you like to contribute?](#how-to-contribute)
 * [Installation](#installation)
 * [Configuration](#configuration)
 * [Testing](#testing)
-* [Console commands](#console-commands)
-* [How to contribute?](#how-to-contribute)
+* [Console commands](#console commands)
+* [How to contribute?](#how to contribute)
 * [Issues](#issues)
-* [Read more](#read-more)
+* [Read more](#read more)
 
 ## FEATURES
 * Migrations for initial database with user-functionality
@@ -30,12 +30,12 @@ This kit is in development. [Would you like to contribute?](#how-to-contribute)
 Please follow these instructions to quickly start building your own API.
 
 ### Composer
-* Install all required Composer packages (composer install)
-* When deploying to production, only install production packages (composer install --no-dev)
+* Install all required Composer packages (```composer install```)
+* When deploying to production, only install production packages (```composer install --no-dev```)
 
 ### Node.js
-* Install all required Node.js packages (npm install).
-* When deploying to production, only install production packages (npm install --production)
+* Install all required Node.js packages (```npm install```).
+* When deploying to production, only install production packages (```npm install --production```)
 
 ## CONFIGURATION
 
@@ -44,7 +44,7 @@ Please follow these instructions to quickly start building your own API.
 ## CONSOLE COMMANDS
 
 ## ISSUES
-If you have any questions or experience any issues with this kit, please [submit an issue](https://github.com/blurrywindows/yii2-api-kit#issues).
+If you have any questions or experience any issues with this kit, please [submit an issue](https://github.com/blurrywindows/yii2-api-kit/issues).
 
 ## READ MORE
 * https://github.com/yiisoft/yii2/blob/master/README.md
