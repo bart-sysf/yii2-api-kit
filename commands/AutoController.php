@@ -62,7 +62,8 @@ class AutoController extends Controller
 
 namespace app\models;
 
-class {$mainClass} extends {$modelClass} {
+class {$mainClass} extends {$modelClass} 
+{
 
 }
 
