@@ -1,7 +1,7 @@
 # Yii 2 API Kit
 Heavily inspired by [trntv/yii2-starter-kit](https://github.com/trntv/yii2-starter-kit), this API kit may be used to quickly start building your Yii2-based API and not waste any time on initializing your project. 
 
-This kit is in development. [Would you like to contribute?](#how-to-contribute)
+This kit is in development. Please do not use it yet! [Would you like to contribute?](#how-to-contribute)
 
 ## TABLE OF CONTENTS
 * [Features](#features)
