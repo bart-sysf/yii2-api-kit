@@ -1,0 +1,22 @@
+{
+  "name": "yii2-api-kit",
+  "version": "1.0.0",
+  "description": "Yii 2 based kit that may be used to quickly start building an api from it.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blurrywindows/yii2-api-kit.git"
+  },
+  "author": "blurrywindows",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/blurrywindows/yii2-api-kit/issues"
+  },
+  "homepage": "https://github.com/blurrywindows/yii2-api-kit#readme",
+  "apidoc": {
+    "title": "Yii 2 api kit",
+    "url" : "https://api.yii2-api-kit.com/v1"
+  },
+  "devDependencies": {
+    "apidoc": "^0.17.6"
+  }
+}

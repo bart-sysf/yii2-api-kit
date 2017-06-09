@@ -31,3 +31,4 @@ tests/_support/_generated
 
 .env
 composer.lock
+/node_modules/
