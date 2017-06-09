@@ -1,8 +1,7 @@
 # Yii 2 API Kit
-[![Packagist](https://img.shields.io/packagist/v/blurrywindows/yii2-api-kit.svg)](https://packagist.org/packages/blurrywindows/yii2-api-kit)
 [![Packagist](https://img.shields.io/packagist/dt/blurrywindows/yii2-api-kit.svg)](https://packagist.org/packages/blurrywindows/yii2-api-kit)
 [![Packagist](https://img.shields.io/packagist/l/blurrywindows/yii2-api-kit.svg)](https://packagist.org/packages/blurrywindows/yii2-api-kit)
-[![GitHub issues](https://img.shields.io/github/issues/blurrywindows/yii2-api-kit.svg)](https://github.com/blurrywindows/yii2-api-kit)
+[![GitHub issues](https://img.shields.io/github/issues/blurrywindows/yii2-api-kit.svg)](https://github.com/blurrywindows/yii2-api-kit/issues)
 
 Heavily inspired by [trntv/yii2-starter-kit](https://github.com/trntv/yii2-starter-kit), this API kit may be used to quickly start building your Yii2-based API and not waste any time on initializing your project. 
 
