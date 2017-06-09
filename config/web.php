@@ -13,7 +13,7 @@ $config = [
         ],
         'db' => $db,
         'errorHandler' => [
-            'errorAction' => 'site/error', //todo
+            'errorAction' => null,
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
