@@ -5,6 +5,7 @@ This kit is in development. Please do not use it yet! [Would you like to contrib
 
 ## TABLE OF CONTENTS
 * [Features](#features)
+* [Installation](#installation)
 * [Configuration](#configuration)
 * [Testing](#testing)
 * [Console commands](#console-commands)
@@ -25,6 +26,9 @@ This kit is in development. Please do not use it yet! [Would you like to contrib
 * PHP >= 5.6.0
 * Composer >= 1.1.2 (https://getcomposer.org/)
 * Node.js >= 8.1.0 (https://nodejs.org/en/)
+
+## INSTALLATION
+```composer create-project blurrywindows/yii2-api-kit```
 
 ## CONFIGURATION
 Please follow these instructions carefully to quickly start building your own API.
