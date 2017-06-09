@@ -1,8 +1,8 @@
 {
     "name": "blurrywindows/yii2-api-kit",
-    "version": "1.0.0",
-    "description": "Yii 2 Basic Project Template",
-    "keywords": ["yii2", "framework", "basic", "project template"],
+    "version": "v1.0.0-alpha",
+    "description": "Yii 2 based kit that may be used to quickly start building an api from it.",
+    "keywords": ["yii2", "framework", "basic", "project template", "api", "kit"],
     "type": "project",
     "license": "BSD-3-Clause",
     "support": {
