@@ -8,10 +8,10 @@ This kit is in development. [Would you like to contribute?](#how-to-contribute)
 * [Installation](#installation)
 * [Configuration](#configuration)
 * [Testing](#testing)
-* [Console commands](#console commands)
-* [How to contribute?](#how to contribute)
+* [Console commands](#console-commands)
+* [How to contribute?](#how-to-contribute)
 * [Issues](#issues)
-* [Read more](#read more)
+* [Read more](#read-more)
 
 ## FEATURES
 * Migrations for initial database with user-functionality
