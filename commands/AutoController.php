@@ -11,6 +11,7 @@ class AutoController extends Controller
 {
     const YES_VALUES = ['y', 'Y', 'yes', 'Yes'];
     const ACTIONS = ['gii-models', 'apidoc'];
+    const SKIP_TABLES = ['migration'];
 
     private $continue = false;
     private $npmBin = '';
@@ -39,7 +40,7 @@ class AutoController extends Controller
 
     public function actionAll()
     {
-        foreach($this::ACTIONS as $action) {
+        foreach ($this::ACTIONS as $action) {
             $this->runAction($action);
         }
     }
@@ -49,25 +50,27 @@ class AutoController extends Controller
         $tableNames = Yii::$app->db->schema->tableNames;
 
         foreach ($tableNames as $tableName) {
-            $mainClass = str_replace(' ', '', ucwords(str_replace('_', ' ', $tableName)));
-            $modelClass = 'Base' . $mainClass;
-            $this->run('gii/model', ['baseClass' => 'BaseActiveRecord', 'modelClass' => $modelClass, 'tableName' => $tableName, 'overwrite' => true, 'interactive' => false]);
+            if (!in_array($tableName, $this::SKIP_TABLES)) {
+                $mainClass = str_replace(' ', '', ucwords(str_replace('_', ' ', $tableName)));
+                $modelClass = 'Base' . $mainClass;
+                $this->run('gii/model', ['baseClass' => 'app\models\BaseActiveRecord', 'modelClass' => $modelClass, 'tableName' => $tableName, 'overwrite' => true, 'interactive' => false]);
 
-            $mainFile = '@app/models/' . $mainClass;
-            if (!file_exists($mainFile)) {
-                $body = <<<PHP
-                    <?php
+                $mainFile = __DIR__ . '/../models/' . $mainClass . '.php';
+                if (!file_exists($mainFile)) {
+                    $body = <<<PHP
+<?php
 
-                    namespace app/models;
+namespace app\models;
 
-                    class {$mainClass} extends {$modelClass} {
+class {$mainClass} extends {$modelClass} {
 
-                    }
+}
 
 PHP;
-                $handle = fopen($mainFile, 'w');
-                fwrite($handle, $body);
-                fclose($handle);
+                    $handle = fopen($mainFile, 'w');
+                    fwrite($handle, $body);
+                    fclose($handle);
+                }
             }
         }
     }
