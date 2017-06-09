@@ -15,7 +15,7 @@ This kit is in development. [Would you like to contribute?](#how-to-contribute)
 
 ## FEATURES
 * Migrations for initial database with user-functionality
-* AutoController that generated ActiveRecords models and API documentation based on apidoc
+* AutoController which generates ActiveRecords models and API documentation based on apidoc
 * Pre-created account functionality (register & login)
 * Authentication based on HTTP-header
 * dotenv support
