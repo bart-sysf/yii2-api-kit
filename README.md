@@ -18,6 +18,7 @@ This kit is in development. [Would you like to contribute?](#how-to-contribute)
 * AutoController which generates ActiveRecords models and API documentation based on apidoc
 * Pre-created account functionality (register & login)
 * Authentication based on HTTP-header
+* Json support
 * dotenv support
 * Test-ready
 
