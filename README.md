@@ -57,17 +57,17 @@ These actions should normally not run on a production server.
 The actions mentioned here generate files and data that may be used in development or testing. 
 When executing these actions in a production environment, the controller will generate a warning prompt that you may override.
 
-#### ```./yii auto/all```
+#### ./yii auto/all
 Executes all the actions in the AutoController.
 
-#### ```./yii auto/gii-models```
+#### ./yii auto/gii-models
 Generates ActiveRecords for all the tables in your database in the ```./models``` folder. 
 It automatically overwrites the ActiveRecords if they exist.
 The ActiveRecords are named ```Base[Tablename]``` and extend ```BaseActiveRecord```.
 It also creates a class ```[Tablename]``` which extends ```Base[Tablename]``` for custom code, extra validation rules, etc.
 The ```[Tablename]``` class will not be overridden when executing the action again.
 
-#### ```./yii auto/apidoc```
+#### ./yii auto/apidoc
 Generates API documentation based on [apidoc](http://apidocjs.com/) from the comments in the ```./controllers``` folder.
 It outputs the documentation in the Git-ignored folder ```./web/apidoc```.
 You may include this folder in Git if you want to export the documentation to a production server.
