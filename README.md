@@ -5,7 +5,6 @@ This kit is in development. [Would you like to contribute?](#how-to-contribute)
 
 ## TABLE OF CONTENTS
 * [Features](#features)
-* [Installation](#installation)
 * [Configuration](#configuration)
 * [Testing](#testing)
 * [Console commands](#console-commands)
@@ -27,7 +26,7 @@ This kit is in development. [Would you like to contribute?](#how-to-contribute)
 * Composer >= 1.1.2 (https://getcomposer.org/)
 * Node.js >= 8.1.0 (https://nodejs.org/en/)
 
-## INSTALLATION
+## CONFIGURATION
 Please follow these instructions carefully to quickly start building your own API.
 
 ### Composer
