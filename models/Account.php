@@ -2,10 +2,33 @@
 
 namespace app\models;
 
+use Yii;
 use yii\web\IdentityInterface;
 
 class Account extends BaseAccount implements IdentityInterface
 {
+    public function rules()
+    {
+        return [
+            [['email', 'password'], 'required'],
+            [['email', 'password'], 'string', 'max' => 255],
+            [['email'], 'unique'],
+            [['api_key'], 'safe'],
+        ];
+    }
+
+    public function beforeSave($insert)
+    {
+        if (parent::beforeSave($insert)) {
+            $this->api_key = Yii::$app->security->generateRandomString(); //todo check unique (KeyHelper)
+            $this->password = Yii::$app->security->generatePasswordHash($this->password);
+
+            return true;
+        }
+
+        return false;
+    }
+
     public static function findIdentity($id)
     {
         return self::findOne($id);
