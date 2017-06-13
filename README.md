@@ -36,7 +36,8 @@ This kit is in development. Please do not use it yet! [Would you like to contrib
 ```composer create-project blurrywindows/yii2-api-kit```
 
 ## CONFIGURATION
-Please follow these instructions carefully to quickly start building your own API.
+Please follow these instructions carefully to quickly start building your own API. 
+The instructions must be executed in the order in which they are presented here to prevent errors.
 
 ### Composer
 * Install all required Composer packages (```composer install```).
@@ -46,13 +47,20 @@ Please follow these instructions carefully to quickly start building your own AP
 * Install all required Node.js packages (```npm install```).
 * When deploying to production, only install production packages (```npm install --production```).
 
+### Database
+* Create a database you will use for your API.
+* Make sure that a user with read/write access exists for this database.
+
 ### Environment
 * Rename ```.env.demo``` to ```.env``` in your project root and alter the variables to your current environment.
 * Make sure that the ```ENTRY_URL``` variable has a trailing slash (/).
 
+### Migrate
+* Migrate (let Yii create initial database tables) using the ```./yii migrate``` command.
+* If this command doesn't work, try adding ```php``` to the command: ```php ./yii migrate```.
+
 ### Webserver
-* Follow the instruction in the [Yii2 guide](http://www.yiiframework.com/doc-2.0/guide-start-installation.html) to make 
-your API available to the internet (or to your local development environment).
+* Follow the instruction in the [Yii2 guide](http://www.yiiframework.com/doc-2.0/guide-start-installation.html) to make your API available to the internet (or to your local development environment).
 
 ## TESTING
 This api-kit is test-ready. 
