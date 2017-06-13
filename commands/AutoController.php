@@ -78,6 +78,6 @@ PHP;
 
     public function actionApidoc()
     {
-        exec('"' . $this->npmBin[0] . '\apidoc" -i .\controllers -o .\web\apidoc');
+        exec('"' . $this->npmBin[0] . '/apidoc" -i ./controllers -o ./web/apidoc'); //todo aangepast, testen op windows
     }
 }
