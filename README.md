@@ -25,6 +25,7 @@ This kit is in development. Please do not use it yet! [Would you like to contrib
 * Json support
 * dotenv support
 * Test-ready
+* [blurrywindows/yii2-key-helper](https://github.com/blurrywindows/yii2-key-helper) functionality
 
 ## REQUIREMENTS
 * PHP >= 5.6.0
